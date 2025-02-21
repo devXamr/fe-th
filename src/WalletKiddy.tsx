@@ -68,8 +68,8 @@ export default function WalletKiddy(){
             </div>
                 <button onMouseOver={() => setButtonHover(true)} onMouseLeave={() => setButtonHover(false)} onClick={handleCodeRequest} className=' px-[3px] py-[3px] rounded-full hover:bg-gradient-to-r hover:from-purple-400 hover:via-indigo-600 hover:to-blue-500 bg-black duration-200 w-fit text-white font-semibold hover:cursor-pointer mx-auto'>
                 <div className={` bg-black duration-200 hover:bg-white hover:text-black py-2 px-2 w-[150px] rounded-full hover:shadow-lg flex justify-center`}>
-                    <span className={`text-lg ${buttonHover ? 'ml-0': 'ml-6'} duration-200`}>Sign-in</span>
-                    <FaLongArrowAltRight className={`${buttonHover ? 'opacity-100 translate-x-2': 'opacity-0'} duration-200 text-xl ml-1 mt-[5px]`}/>
+                    <span className={`${buttonHover ? 'ml-0': 'ml-6'} duration-200`}>Sign-in</span>
+                    <FaLongArrowAltRight className={`${buttonHover ? 'opacity-100 translate-x-2': 'opacity-0'} duration-200 text-xl ml-1 mt-[3px]`}/>
                 </div>
             </button>
             </div>
