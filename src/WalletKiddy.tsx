@@ -51,9 +51,11 @@ export default function WalletKiddy(){
             const result  = await messageVerification.data
 
             if (result.success === true){
+                console.log('signed you in')
                 setSignedIn(true)
                 handleNav()
             } else {
+                console.log('cannot sign you in')
                 setSignedIn(false)
             }
 
