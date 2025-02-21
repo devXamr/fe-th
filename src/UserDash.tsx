@@ -1,8 +1,10 @@
-import rickroll from './assets/bb5661ee1b1b1323855be3a0f95eb119.jpeg'
-
-export default function UserDash(){
-    return <div>
-        You're in!
-        <img src={rickroll}/>
+import rickroll from "./assets/rickroll-roll.gif";
+export default function UserDash() {
+  return (
+    <div>
+      <div className="w-1/3 mx-auto">
+        <img alt="rick-roll" className="w-full" src={rickroll} />
+      </div>
     </div>
+  );
 }

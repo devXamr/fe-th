@@ -4,11 +4,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        satoshi: ['Satoshi', 'sans-serif'],
-        recia: [ 'Recia', 'serif']
-      }
+        satoshi: ["Satoshi", "sans-serif"],
+        recia: ["Recia", "serif"],
+      },
     },
   },
   plugins: [],
-}
-
+};
