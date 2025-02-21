@@ -29,7 +29,7 @@ export default function WalletKiddy(){
         setNoWalletError(false)
 
         try {
-            const response = await axios.post('http://localhost:3000/sendNonce', {publicKey: publicKey.toBase58()})
+            const response = await axios.post('https://be-th.vercel.app/sendNonce', {publicKey: publicKey.toBase58()})
             const nonce = response.data
 
 
@@ -46,7 +46,7 @@ export default function WalletKiddy(){
 
 
 
-            const messageVerification  = await axios.post('http://localhost:3000/verifyNonce', {publicKey: publicKey.toBase58(), signature:  Array.from(signature), nonce: nonceVal})
+            const messageVerification  = await axios.post('https://be-th.vercel.app/verifyNonce', {publicKey: publicKey.toBase58(), signature:  Array.from(signature), nonce: nonceVal})
 
             const result  = await messageVerification.data
 
