@@ -17,6 +17,7 @@ export default function WalletKiddy(){
     const [signedIn, setSignedIn] = useState(false)
 
   function handleNav(){
+
         nav('/userDash')
   }
 
@@ -47,6 +48,8 @@ export default function WalletKiddy(){
 
 
             const messageVerification  = await axios.post('https://be-th.vercel.app/verifyNonce', {publicKey: publicKey.toBase58(), signature:  Array.from(signature), nonce: nonceVal})
+
+            console.log("2nd api call response: ", messageVerification.data)
 
             const result  = await messageVerification.data
 
