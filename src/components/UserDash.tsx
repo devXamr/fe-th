@@ -1,4 +1,4 @@
-import rickroll from "./assets/rickroll-roll.gif";
+import rickroll from "../assets/rickroll-roll.gif";
 export default function UserDash() {
   return (
     <div>
