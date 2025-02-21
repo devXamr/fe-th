@@ -40,7 +40,9 @@ export default function WalletKiddy(){
 
             const encodedMessage = new TextEncoder().encode(nonceVal)
 
+             //@ts-ignore
                 const signature = await signMessage(encodedMessage)
+
 
 
 
@@ -55,8 +57,9 @@ export default function WalletKiddy(){
                 setSignedIn(false)
             }
 
-        } catch(e){
-            console.error("Encountered the following error", e.response)
+        } catch(error){
+            //@ts-ignore
+            console.error("Encountered the following error", error.response)
         }
 
     }

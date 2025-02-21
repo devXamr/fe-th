@@ -11,8 +11,7 @@ export default function App() {
         <WalletProvider wallets={wallets} autoConnect>
             <WalletModalProvider>
                 <div>
-                    <h1>Welcome to My dApp</h1>
-                    <ConnectWalletButton />
+
                 </div>
             </WalletModalProvider>
         </WalletProvider>
